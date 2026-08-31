@@ -1,9 +1,9 @@
 package oop_00000090472_RafaelGadingSamoda.week01
-class gameClass() {
+class classGame() {
     val gameTitle : String? = null
     val price : Long? = null
 }
 
 fun main(){
-    var gameProduct : gameClass? = null
+    var gameProduct : classGame? = null
 }
