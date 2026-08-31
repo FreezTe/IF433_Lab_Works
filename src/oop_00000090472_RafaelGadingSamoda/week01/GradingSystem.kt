@@ -1,10 +1,10 @@
 package oop_00000090472_RafaelGadingSamoda.week01
 
 fun main (){
-    var name : String = "rexYMnvrT"
-    var score : Int = 80
+    val name   = "rexYMnvrT"
+    val score   = 80
 
-    println("Name :" + name + ", Score: " + score)
+    println("Name : $name, Score: $score" )
 
 //    val name  = "rexYMnvrT"
 //    val score  = 80
