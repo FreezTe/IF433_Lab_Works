@@ -8,7 +8,7 @@ fun main(){
     var area: Double = pi * radius * radius
 
 
-    println("Radius: $radius , Area: $area")
+//    println("Radius: $radius , Area: $area")
 
     println("Checker: ${checker(area)} ${checkSize(area)}")
 }
