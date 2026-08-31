@@ -2,13 +2,15 @@ package oop_00000090472_RafaelGadingSamoda.week01
 class ClassGame(val gameTitle : String? = null,
                 val price : Long)
 
-class Receipt(val receiptId : Int, val game : ClassGame, val finalPrice : Double){
+class Receipt(val receiptId : Int, val game : ClassGame, val finalPrice : Double, val custNote : String?){
     fun printReceipt(){
+        val note = custNote ?: "EMPTY"
         println("=== STRUK PEMBELIAN ===")
         println("ID Struk    : $receiptId")
         println("Judul Game  : ${game.gameTitle}")
         println("Harga Asli  : Rp${game.price}")
         println("Harga Total : Rp$finalPrice")
+        println("Note : $note")
     }
 }
 
@@ -19,9 +21,10 @@ fun main(){
         gameTitle = "Elden Ring",
         price = 600000L
     )
+    var userNote : String? = null
     var receiptId : Int = 1
     var discountedPrice = discountLogic(price = gameProduct.price)
-    val Receipt = Receipt(receiptId = receiptId, game = gameProduct, finalPrice = discountedPrice)
+    val Receipt = Receipt(receiptId = receiptId, game = gameProduct, finalPrice = discountedPrice, custNote = userNote)
 
     Receipt.printReceipt()
 
