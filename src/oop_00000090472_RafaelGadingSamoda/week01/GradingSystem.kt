@@ -3,6 +3,9 @@ package oop_00000090472_RafaelGadingSamoda.week01
 fun main() {
     val name = "rexYMnvrT"
     val score = 80
+    val studentId : String ? = null
+
+    val idLength = studentId?.length ?: 0
 
     println("Name : $name, Score: $score")
 
@@ -17,6 +20,7 @@ fun main() {
 
     println("Grade kamu : $grade\n")
     println("Status: ${calculateStatus(score)}")
+    println("Panjang ID : $idLength")
 
 }
 
