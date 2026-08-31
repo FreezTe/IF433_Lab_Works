@@ -1,13 +1,13 @@
 package oop_00000090472_RafaelGadingSamoda.week01
 
-fun main (){
-    val name   = "rexYMnvrT"
-    val score   = 80
+fun main() {
+    val name = "rexYMnvrT"
+    val score = 80
 
-    println("Name : $name, Score: $score" )
+    println("Name : $name, Score: $score")
 
 
-    val grade = when(score) {
+    val grade = when (score) {
         in 90..100 -> "A"
         in 80..89 -> "B"
         in 70..79 -> "C"
@@ -16,6 +16,9 @@ fun main (){
     }
 
     println("Grade kamu : $grade\n")
-
+    println("Status: ${calculateStatus(score)}")
 
 }
+
+
+fun calculateStatus(score: Int) = if (score > 75) "Lulus" else "Tidak Lulus"
