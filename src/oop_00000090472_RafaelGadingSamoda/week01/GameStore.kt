@@ -7,3 +7,12 @@ class classGame() {
 fun main(){
     var gameProduct : classGame? = null
 }
+
+fun discountLogic(price: Long): Double{
+
+val realPrice = price
+     return when {
+        price > 500000 -> realPrice*(1.0-0.2)
+    else ->  realPrice*(1.0-0.1)
+    }
+}
