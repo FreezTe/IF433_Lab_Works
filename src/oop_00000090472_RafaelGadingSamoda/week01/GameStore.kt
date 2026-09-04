@@ -2,6 +2,8 @@ package oop_00000090472_RafaelGadingSamoda.week01
 class ClassGame(val gameTitle : String? = null,
                 val price : Long)
 
+
+//----- receipt Print
 class Receipt(val receiptId : Int, val game : ClassGame, val finalPrice : Double, val custNote : String?){
     fun printReceipt(){
         val note = custNote ?: "EMPTY"
@@ -15,12 +17,13 @@ class Receipt(val receiptId : Int, val game : ClassGame, val finalPrice : Double
 }
 
 
-
+//----main
 fun main(){
     val gameProduct = ClassGame(
         gameTitle = "Elden Ring",
         price = 600000L
     )
+//
     var userNote : String? = null
     var receiptId : Int = 1
     var discountedPrice = discountLogic(price = gameProduct.price)
@@ -31,9 +34,7 @@ fun main(){
 }
 
 
-
-
-
+//---discount logic
 fun discountLogic(price: Long): Double{
 val realPrice = price.toDouble()
      return when {
