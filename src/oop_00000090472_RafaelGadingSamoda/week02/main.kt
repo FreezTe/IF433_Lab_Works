@@ -13,7 +13,7 @@ fun main() {
     print("Masukkan NIM(wajib 5 karakter : ")
     val nim = scanner.next()
 
-    scanner.nextLine()
+    scanner.nextLine()//Bersihkan buffer nextline (penyakit klasik scanner!)
 
     if (nim.length != 5){
         println("ERROR: Pendaftaran dibatalkan. NIM harus 5 karakter!")
