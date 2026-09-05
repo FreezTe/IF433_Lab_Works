@@ -4,6 +4,7 @@ class Student(
     val name: String,
     val nim: String,
     val major: String,
+    val gpa: Double = 0.0,
 ){
     init{
         if (nim.length != 5 ){
@@ -14,7 +15,8 @@ class Student(
         }
     }
 
-    constructor(name: String, nim: String) : this(name, nim, "Non-Matriculated"){
+    constructor(name: String, nim: String) : this(name, nim, "Non-Matriculated", 0.0){
         println("LOG: Menggunakan constructor jalur umum (tanpa Jurusan).")
+
     }
 }
