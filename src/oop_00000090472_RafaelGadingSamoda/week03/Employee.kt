@@ -12,4 +12,15 @@ class Employee(val name : String){
         }
     println("Mencoba set gaji ke: $value")
     this.salary = value
+
+    private var performanceRating: Int = 3
+    fun increasePerformaance(){
+        performanceRating++
+        println("Kinerja $name meningkat! Rating: $performanceRating")
+    }
+
+
+    fun printStatus(){
+        println("Karyawan: $name, Rating: $performanceRating")
+    }
 }
