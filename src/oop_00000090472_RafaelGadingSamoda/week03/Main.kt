@@ -11,4 +11,11 @@ fun main(){
     e.increasePerformance()
 
     println("Pajak yang harus dibayar: ${e.tax}")
+    val d = Weapon("Bucky")
+    println("test error")
+    d.damage = -20
+    println("${d.name} memeberikan damage ${d.damage} dengan tier ${d.tier}")
+   d.damage = 130
+    println("${d.name} memeberikan damage ${d.damage} dengan tier ${d.tier}")
+
 }
