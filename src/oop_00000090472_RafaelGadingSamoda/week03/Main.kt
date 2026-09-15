@@ -18,4 +18,15 @@ fun main(){
    d.damage = 130
     println("${d.name} memeberikan damage ${d.damage} dengan tier ${d.tier}")
 
+    val player = Player("Rafael")
+
+//     player.xp = 50
+    player.addExp(50)
+    println("Level saat ini: ${player.level}")
+
+    player.addExp(60)
+    println("Level saat ini: ${player.level}")
+
+    player.addExp(-20)
+
 }
