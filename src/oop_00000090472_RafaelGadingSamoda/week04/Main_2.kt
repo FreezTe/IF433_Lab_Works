@@ -16,8 +16,19 @@ fun main() {
 
 
     println("\n--- Testing ElectricCar ---")
-    val myCar = ElectricCar_TM1("Toyota", 4)
-    myCar.openTrunk()
-    myCar.honk()
-    myCar.accelerate()
+    val eCar = ElectricCar_TM1("Toyota", 4, 23)
+    eCar.openTrunk()
+    eCar.honk()
+    eCar.accelerate()
+
+    println("\n--- Testing Manager ---")
+    val mngr = Manager_TM2("Toyota", 4)
+    mngr.work()
+    mngr.calculateBonus()
+
+
+    println("\n--- Testing Employee ---")
+    val dvlop = Developer_TM2("Toyota", 4, "C#")
+    dvlop.work()
+    dvlop.calculateBonus()
 }
