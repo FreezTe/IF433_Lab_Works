@@ -34,6 +34,21 @@ fun main() {
     // --- TUGAS MANDIRI 2: Sistem Pembayaran (Abstraction & Smart Casting) ---
     val eWallet = EWalletTM2(accountName = "Andi", balance = 50000.0)
     val creditCard = CreditCardTM2(accountName = "Budi", limit = 100000.0)
+    // Polymorphic Collection: List bertipe Parent (PaymentMethod), isi objek Anak
+    val daftarPembayaran: List<PaymentMethodTM2> = listOf(eWallet, creditCard)
 
+    println("\n=== PROSES PEMBAYARAN (percobaan pertama) ===")
+    for (pembayaran in daftarPembayaran) {
+        pembayaran.processPayment(75000.0)
+    }
+
+    println("\n=== SMART CASTING CHALLENGE (top up otomatis untuk EWallet) ===")
+    for (pembayaran in daftarPembayaran) {
+        // Smart Casting pakai "is"
+        if (pembayaran is EWalletTM2) {
+            pembayaran.topUp(50000.0)
+            pembayaran.processPayment(75000.0) // seharusnya berhasil kali ini
+        }
+    }
 
 }
