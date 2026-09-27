@@ -23,7 +23,7 @@ fun main() {
     }
 
     // --- TUGAS MANDIRI 1: Test MathHelper (Overloading) ---
-    val mathHelper = MathHelper()
+    val mathHelper = MathHelper_TM1()
 
     println("=== TEST MATH HELPER (OVERLOADING) ===")
     println("Luas persegi (sisi 5): ${mathHelper.hitungLuas(5)}")

@@ -1,6 +1,6 @@
 package oop_00000090472_RafaelGadingSamoda.week05RafaelGS_90472
 
-class MathHelper {
+class MathHelper_TM1 {
     fun hitungLuas(sisi: Int): Int{
         return sisi * sisi
     }
