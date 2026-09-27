@@ -29,4 +29,11 @@ fun main() {
     println("Luas persegi (sisi 5): ${mathHelper.hitungLuas(5)}")
     println("Luas persegi panjang (4 x 6): ${mathHelper.hitungLuas(4, 6)}")
     println("Luas lingkaran (jari-jari 3.0): ${mathHelper.hitungLuas(4.0)}")
+
+
+    // --- TUGAS MANDIRI 2: Sistem Pembayaran (Abstraction & Smart Casting) ---
+    val eWallet = EWalletTM2(accountName = "Andi", balance = 50000.0)
+    val creditCard = CreditCardTM2(accountName = "Budi", limit = 100000.0)
+
+
 }
