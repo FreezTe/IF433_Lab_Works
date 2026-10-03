@@ -9,7 +9,7 @@ interface SmartDevice {
     val name : String
 }
 
-interface Swithcable{
+interface Switchable{
     fun turnon()
     fun turnof()
 }
