@@ -11,4 +11,5 @@ abstract class SmartSpeaker(override val id: String, override val name: String):
     fun playMusic(song: String) {
         println("$name memutar lagu $song")
     }
+
 }
