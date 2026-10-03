@@ -25,7 +25,7 @@ class SmartHomeHub {
             if (device is Recordable) {
                 device.startRecord()
             }
-            if (device is SmartSpeaker) {
+            if (device is SmartSpeakerTM) {
                 device.playMusic("Sirine Peringatan")
             }
         }

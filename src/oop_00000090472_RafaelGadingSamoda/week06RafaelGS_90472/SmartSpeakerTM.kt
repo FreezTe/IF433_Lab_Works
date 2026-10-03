@@ -1,6 +1,6 @@
 package oop_00000090472_RafaelGadingSamoda.week06RafaelGS_90472
 
-abstract class SmartSpeaker(override val id: String, override val name: String): SmartDevice, Switchable {
+abstract class SmartSpeakerTM(override val id: String, override val name: String): SmartDevice, Switchable {
     override fun turnon() {
         println("[$name] Speaker aktif dan terhubung ke jaringan.")
     }
