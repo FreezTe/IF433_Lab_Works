@@ -4,7 +4,7 @@ class Capabilities {
 
 }
 
-interface BlueetoothConnectable(){
+interface BluetoothConnectable{
     fun connectToBluetooth()
 }
 
