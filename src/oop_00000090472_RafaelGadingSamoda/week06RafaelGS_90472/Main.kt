@@ -25,4 +25,14 @@ fun main() {
     val lamp = SmartLampTM(id = "D01", name = "Ruang Tamu")
     val speaker = SmartSpeakerTM(id = "D02", name = "Google Nest Dapur")
     val cctv = SmartCCTVTM(id = "D03", name = "Ezviz Garasi")
+
+    val hub = SmartHomeHub()
+    hub.addDevice(lamp)
+    hub.addDevice(speaker)
+    hub.addDevice(cctv)
+
+// --- Testing ---
+    println("\n=== TEST SMART HOME SYSTEM ===")
+    hub.activateSecurityMode()   // cctv & lamp? -> hanya yg Recordable (cctv) + speaker putar sirine
+    hub.turnOffAllSwitches()     // semua yg Switchable (lamp, speaker, cctv) dimatikan
 }
