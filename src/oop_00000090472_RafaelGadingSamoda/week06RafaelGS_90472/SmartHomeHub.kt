@@ -17,6 +17,7 @@ class SmartHomeHub {
         }
     }
 
+
     // Smart Casting lanjutan: Recordable -> startRecord(), SmartSpeaker -> playMusic()
     fun activateSecurityMode() {
         println("\n=== MENGAKTIFKAN MODE KEAMANAN ===")
