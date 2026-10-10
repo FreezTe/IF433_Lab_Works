@@ -11,4 +11,11 @@ fun main (){
     val client =
         NetworkClient.createClient()
     client.connect()
+
+
+    println("\n=== TEST REGULAR CLASS ===")
+    val reg1 = RegulerUser("Alice",22)
+    val reg2 = RegulerUser("Alice",22)
+    println(reg1) //akan mencetak memori hash
+    println ("Sama? $reg1 == $reg2") // false
 }
