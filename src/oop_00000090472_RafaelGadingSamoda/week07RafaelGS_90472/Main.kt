@@ -22,5 +22,12 @@ fun main (){
     val data1 = DataUser("Alice",22)
     val data2 = DataUser("Alice",22)
     println(data1) //akan readable format
-    println ("Sama? $data1 == $data2") // false
+    println ("Sama? $data1 == $data2") // True
+
+
+    val data3 = data1.copy(age = 23)
+    println("Hasil copy : $data3")
+
+    val (userName, userAge) = data1
+    println("Destructured: $userName berumur $userAge")
 }
