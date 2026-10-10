@@ -37,5 +37,6 @@ fun main (){
     val uiMassage = when (response) {
         is ApiResponse.Success -> "Tampilkan : ${response.data}"
         is ApiResponse.Error -> "Munculkan alert : ${response.massage}"
+        is ApiResponse.Loading -> "Tampilkan Spinner..."
     }
 }
