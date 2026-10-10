@@ -1,6 +1,6 @@
 package oop_00000090472_RafaelGadingSamoda.week07RafaelGS_90472
 
-object GameManager_TM2 {
+object GameManager_TM {
     var isGameRunning: Boolean = false
 
     fun startGame() {
