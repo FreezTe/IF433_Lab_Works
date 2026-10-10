@@ -4,3 +4,4 @@ class UserModels {
 }
 
 class RegulerUser(val name:String, val age: Int)
+data class DataUser(val username:String, val age:Int)
