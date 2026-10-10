@@ -39,4 +39,8 @@ fun main (){
         is ApiResponse.Error -> "Munculkan alert : ${response.massage}"
         is ApiResponse.Loading -> "Tampilkan Spinner..."
     }
+
+    println("\n=== TEST GAME MANAGER (SINGLETON) ===")
+    GameManager_TM.startGame()
+    GameManager_TM.startGame() // kedua kali: harus tertahan oleh Singleton
 }
