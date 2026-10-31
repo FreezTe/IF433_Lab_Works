@@ -18,7 +18,7 @@ fun main (){
 
 
     println("== TEST SAFE CASTING ===")
-    val mixedData:List<Any> = listOf("Smartphone", 1500000, UserProfile("Andi", null), "Laptop", 4500000.0)
+    val mixedData:List<Any> = listOf("Smartphone", 1500000, UserProfile("Andi", null, null), "Laptop", 4500000.0)
 
 
     for(item in mixedData){
