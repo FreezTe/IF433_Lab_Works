@@ -1,5 +1,14 @@
 package oop_00000090472_RafaelGadingSamoda.week09RafaelGS_90472
 
 fun main (){
-
+    val tradeHistory = listOf(
+        TradeLog("BTCUSDT", "LONG", 20, 15.5, "CLOSED"),
+        TradeLog("ETHUSDT", "SHORT", 10, -5.2, "CLOSED"),
+        TradeLog("SOLUSDT", "LONG", 15, 8.3, "CLOSED"),
+        TradeLog("BTCUSDT", "SHORT", 25, -12.4, "CLOSED"),
+        TradeLog("ETHUSDT", "LONG", 10, 22.1, "CLOSED"),
+        TradeLog("BNBUSDT", "LONG", 5, 3.4, "OPEN"),
+        TradeLog("SOLUSDT", "SHORT", 20, -7.8, "OPEN"),
+        TradeLog("BTCUSDT", "LONG", 10, 4.0, "OPEN")
+    )
 }
